@@ -38,9 +38,6 @@ Description:
 
 '''
 
-def used():
-	print "used :\n%s <file.txt> <addr of root node>" % argv[0]
-
 def find(st):
 	#find a string in file
 	for i in range(len_of_file):
@@ -123,6 +120,6 @@ def main(name, root):
 if __name__ == '__main__':
 	
 	if len(argv) < 3:
-		used()
-		exit()
-	main(argv[1], argv[2])
+		print "usage :\n%s <file.txt> <addr of root node>" % argv[0]
+	else:
+		main(argv[1], argv[2])
