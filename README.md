@@ -2,6 +2,7 @@
 take IDA PRO memory lines and print binary tree node.
 
 memory example:
+
 	.data:0040467C unk_40467C      db    8				  <--- num  
 	.data:0040467D                 db    0
 	.data:0040467E                 db    0
@@ -10,7 +11,8 @@ memory example:
 	.data:00404684                 dd offset unk_404664   <--- pointer to left node
 	
 output example:
-C:\>ParseBinTree.py text.txt unk_404688
+
+C:\>BinTreeParser.py text.txt unk_404688
 
 	24h (root node)
 	        8 (right node)
